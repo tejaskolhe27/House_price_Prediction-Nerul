@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+        <title>NHPP</title>
+		<link rel="shortcut icon" href="img/logo2.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="app.js"></script>			
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+        .head1 {
+            font-size:40px;
+            color:#fcf6f5;
+            font-weight:bold;
+        }
+		.body_sec {
+            margin-left:20px;
+			font-size:30px;
+        }
+
+        body {
+            margin: 0 auto;
+            background-position:center;
+            background-size: contain;
+			background-image: url('img1.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed; 
+			background-size: 100% 100%;
+
+        }
+      
+        
+        footer{
+            width: 100%;
+            background-color: #ac3b61;
+            color: #fff;
+            text-align:center;
+            font-size:12px;
+            
+        }
+   
+		.submit{
+		height:45px;
+		background-color:#08d408;
+		color:white;
+		}
+		
+
+		.photo1{
+            left: auto;
+            float: left;
+		}
+		
+		.photo2{
+            right: auto;
+            float: right;
+		}
+
+
+.form{
+background-color:#e9ecf5;
+width:650px;
+}
+
+
+</style>
+</head>
+
+
+<body>
+      
+    <!-- Header Section -->
+    <header><br>
+        <center><div class="head1"><img src="you.png" width="100" height="80"  class = "photo1"/>HOUSE PRICE PREDICTOR
+		<img src="img2.png" width="100" height="80"  class = "photo2"/></div></center>
+    </header><br><br>
+      
+     
+<center>
+<div class="form">
+
+	<fieldset>
+		<legend>AREA</legend> 
+			<label>Built up Area (sqft.) <input type="number" id="uiSqft" name="Squareft" required><br></label>
+	</fieldset>
+	<br>
+	
+	
+	<fieldset>
+		<legend>BATH</legend>
+			<div>
+				<label for="radio-bhk-1"><input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/> 1 BHK</label>
+				
+				<label for="radio-bhk-2"><input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>2 BHK</label>
+				<label for="radio-bhk-3"><input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>3 BHK</label>
+				<label for="radio-bhk-4"><input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>4 BHK</label>
+				<label for="radio-bhk-5"><input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>5 BHK</label>
+			</div>
+	</fieldset><br>
+
+
+	<fieldset>
+		<legend>BATHROOM</legend>
+	<div>
+			<label for="radio-bath-1"><input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>1 BATH</label>
+			<label for="radio-bath-2"><input type="radio" id="radio-bath-2" name="uiBathrooms" value="2"/>2 BATH</label>
+			<label for="radio-bath-3"><input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>3 BATH</label>
+			<label for="radio-bath-4"><input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>4 BATH</label>
+			<label for="radio-bath-5"><input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>5 BATH</label>
+	</div>
+	</fieldset><br>
+	
+	
+	<fieldset>
+		<legend>LOCATION</legend>
+			<select class="location" name="" id="uiLocations" style="height:25px;width:250px;" >
+			<option value="" disabled="disabled" >Choose a Location</option>
+			<option>Electronic City</option>
+			<option>Rajaji Nagar</option>
+		</select>
+	</fieldset><br>
+	
+	
+	<fieldset>
+		<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+		
+	</fieldset><br>
+	
+	
+	<fieldset>
+	
+		<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+	</fieldset>
+</div>
+
+</center>
+
+    <br>
+	<br>
+	<br>
+	<br>
+	  <br>
+	<br>
+	<br>
+	<br>
+
+	<footer>
+	<p>This is the webpage of Nerul House Price Predictor , developed with an objective to Build a machine Learning mode.<br>
+	The content in this webpage is the result of what the developer have learned from Machine Leaning.<br>
+	This website is designed by <b>Tejas,Rushikesh,Sanika,Pranav</b></p>
+</footer>
+</body>
+
+</html>     
